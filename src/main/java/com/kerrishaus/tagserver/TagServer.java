@@ -6,9 +6,9 @@ import java.nio.ByteBuffer;
 import org.java_websocket.WebSocket;
 import org.java_websocket.handshake.ClientHandshake;
 
-public class WebSocketServer extends org.java_websocket.server.WebSocketServer
+public class TagServer extends org.java_websocket.server.WebSocketServer
 {
-    public WebSocketServer(InetSocketAddress address)
+    public TagServer(InetSocketAddress address)
     {
         super(address);
     }
@@ -20,6 +20,7 @@ public class WebSocketServer extends org.java_websocket.server.WebSocketServer
 
         System.out.println("New connection established: " + conn.getRemoteSocketAddress());
     }
+
     @Override
     public void onClose(WebSocket conn, int code, String reason, boolean remote)
     {
