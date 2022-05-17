@@ -49,6 +49,6 @@ public class TagServer extends org.java_websocket.server.WebSocketServer
     @Override
     public void onStart()
     {
-        System.out.println("Server started successfully.");
+        System.out.println("TagServer is ready.");
     }
 }
